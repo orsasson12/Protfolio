@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply font-sans;
+    @apply bg-[#02192f];
+  }
+  li {
+    @apply px-4 cursor-pointer;
+  }
+  .socialContainerMd {
+    @apply flex flex-col fixed top-[35%] left-0;
+  }
+
+  .socialListItem {
+    @apply w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 hover:rounded-xl;
+  }
+  .socialListItemLink {
+    @apply flex justify-between items-center w-full text-gray-300;
+  }
+  .aboutSectionImage {
+    @apply bg-center bg-cover rounded-full w-[200px] h-[200px]	md:w-[400px] md:h-[400px] bg-no-repeat bg-[url(https://scontent.fhfa2-2.fna.fbcdn.net/v/t31.18172-8/18401956_1884839688208473_2119924738278574180_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4BvPxXRqB4sAX90d646&_nc_ht=scontent.fhfa2-2.fna&oh=00_AfCnD0ihahmRLQjFPzjIR20UsHIFC0aNancEmNNjkjwuWQ&oe=64142333)] object-cover;
+  }
+
+  .content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+  }
+  .content-div:hover {
+    cursor: pointer;
+    background-image: linear-gradient(
+        to right,
+        rgba(58, 133, 237, 0.801),
+        hsla(234, 76%, 59%, 0.801)
+      ),
+      url("https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80") !important;
+    box-shadow: rgba(255, 255, 255, 0.299) 0px 10px 20px,
+      rgba(211, 211, 211, 0.23) 0px 6px 6px;
+  }
+}
